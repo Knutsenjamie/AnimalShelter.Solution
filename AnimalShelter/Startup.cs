@@ -25,6 +25,7 @@ namespace AnimalShelter
       services.AddDbContext<AnimalShelterContext>(opt =>
                 opt.UseMySql(Configuration["ConnectionStrings:DefaultConnection"], ServerVersion.AutoDetect(Configuration["ConnectionStrings:DefaultConnection"])));
       services.AddControllers();
+      services.AddApiVersioning();
       services.AddSwaggerGen(swagger =>
      {
        //This is to generate the Default UI of Swagger Documentation    
