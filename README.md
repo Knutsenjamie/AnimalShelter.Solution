@@ -69,7 +69,7 @@ https://github.com/Knutsenjamie/AnimalShelter.Solution
     * Start by running the command `dotnet run` in the `AnimalShelter` project folder if you haven't already to get a server up and running. 
     * Then, navigate to https://www.postman.com and make an account if you haven't already. Once signed in, press "Launch Postman". On the left-hand side, look for the "Workspaces" tab, and select it. Once inside, select "My Workspace". 
     * Once you are inside of your workspace, look almost directly under the search bar on the top- there will be an "Overview" and a "+" Tab. Navigate over to the "+" Tab.  
-    * For GET requests: to get all the Animals in this API, enter http://localhost:5000/api/Animals into the "GET" search bar and select send. Then, the correct response should appear in the "Pretty" Tab as a JSON response exactly like this:
+    * **For GET requests:** to get all the Animals in this API, enter http://localhost:5000/api/Animals into the "GET" search bar and select send. Then, the correct response should appear in the "Pretty" Tab as a JSON response exactly like this:
 ```
 {
         "animalId": 1,
@@ -135,7 +135,7 @@ https://github.com/Knutsenjamie/AnimalShelter.Solution
         "gender": "Male"
 }
 ```
- * To GET by querying the ID: simply enter http://localhost:5000/api/Animals/[ENTER-ID-NUMBER-HERE] into that same GET search bar and simpy replace the [ENTER-ID-NUMBER-HERE] with an Id number of choice you would like to see. For Example, http://localhost:5000/api/Animals/4 will return a response exactly like so:
+ * **To GET by querying the ID:** simply enter http://localhost:5000/api/Animals/[ENTER-ID-NUMBER-HERE] into that same GET search bar and simpy replace the [ENTER-ID-NUMBER-HERE] with an Id number of choice you would like to see. For Example, http://localhost:5000/api/Animals/4 will return a response exactly like so:
  
  ```
 {
@@ -149,7 +149,7 @@ https://github.com/Knutsenjamie/AnimalShelter.Solution
 }
 ```
 * **Note**: You can also GET responses by querying by Breed (such as http://localhost:5000/api/Animals/?breed=Dachshund), by Gender (such as http://localhost:5000/api/Animals/?gender=female), by Name (http://localhost:5000/api/Animals/?name=Smeagol), or by Type (http://localhost:5000/api/Animals/?type=iguana). Finally, simply switch out the specific parameters to retrieve whichever specific data you want (i.e. - switching [?name=Smeagol] into [?name=Weenie] and so forth.)
-* For POST requests: If you would like to add some Animals to this API, Switch the request in the dropdown to the left from GET to POST. Next, deselect the "Params" tab underneath and switch to the "Body" tab. Then, select the radio button that says "Raw" and paste this into the body- replacing all values with the values you want:
+* **For POST requests:** If you would like to add some Animals to this API, Switch the request in the dropdown to the left from GET to POST. Next, deselect the "Params" tab underneath and switch to the "Body" tab. Then, select the radio button that says "Raw" and paste this into the body- replacing all values with the values you want:
 ```
 {
     "animalId": 0,
@@ -162,7 +162,7 @@ https://github.com/Knutsenjamie/AnimalShelter.Solution
 }
 ```
 * Finally, after filling out your preferred values, enter in http://localhost5000/api/Animals into the search bar and press "Send".
-* For PUT requests: To edit an exsisting entry with a PUT request, select the dropdown from GET or POST to PUT instead. Again, select the "Body" tab, and select the "raw" radio button. Post the following into the body and replace the values as you would like just as you would in the POST request:
+* **For PUT requests:** To edit an exsisting entry with a PUT request, select the dropdown from GET or POST to PUT instead. Again, select the "Body" tab, and select the "raw" radio button. Post the following into the body and replace the values as you would like just as you would in the POST request:
 
 ```
 {
@@ -175,10 +175,10 @@ https://github.com/Knutsenjamie/AnimalShelter.Solution
     "gender": "string"
 }
 ```
-   * Finally, after filling out your preffered values, enter in http://localhost5000/api/Animals/[THE-ID-NUMBER-YOU-WANT-TO-EDIT/REPLACE] Ex: If you wanted to replace Peppermint (who has the id of one), you'd put http://localhost5000/api/Animals/1.
-   * For DELETE requests: To delete one of the Animals from this API, select GET in the searchbar drop down and select DELETE instead. Then, paste in http://localhost5000/api/Animals/[THE-ID-NUMBER-YOU-WANT-TO-DELETE] Ex: If you wanted to delete Weenie (who has the id of two), you'd put http://localhost5000/api/Animals/2. 
-    * Finally, hit Send to delete the specific entry.
-2. To view Swagger Documentation: Run `dotnet run` in the AnimalShelter project folder to open up a local server, then paste the address http://localhost:5000/swagger in your URL bar to see the swagger documentation for AnimalShelter API. Once the swagger UI is accessed, you can play around with the "Try out" and "Execute" buttons to see how each and every one of the endpoints work. 
+* Finally, after filling out your preffered values, enter in http://localhost5000/api/Animals/[THE-ID-NUMBER-YOU-WANT-TO-EDIT/REPLACE] Ex: If you wanted to replace Peppermint (who has the id of one), you'd put http://localhost5000/api/Animals/1.
+* **For DELETE requests:** To delete one of the Animals from this API, select GET in the searchbar drop down and select DELETE instead. Then, paste in http://localhost5000/api/Animals/[THE-ID-NUMBER-YOU-WANT-TO-DELETE] Ex: If you wanted to delete Weenie (who has the id of two), you'd put http://localhost5000/api/Animals/2. 
+* Finally, hit Send to delete the specific entry.
+2. **To view Swagger Documentation:** Run `dotnet run` in the AnimalShelter project folder to open up a local server, then paste the address http://localhost:5000/swagger in your URL bar to see the swagger documentation for AnimalShelter API. Once the swagger UI is accessed, you can play around with the "Try out" and "Execute" buttons to see how each and every one of the endpoints work. 
 
 ## Licensing
 
