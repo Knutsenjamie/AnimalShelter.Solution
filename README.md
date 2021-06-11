@@ -176,7 +176,27 @@ https://github.com/Knutsenjamie/AnimalShelter.Solution
 }
 ```
    * Finally, after filling out your preffered values, enter in http://localhost5000/api/Animals/[THE-ID-NUMBER-YOU-WANT-TO-EDIT/REPLACE] Ex: If you wanted to replace Peppermint (who has the id of one), you'd put http://localhost5000/api/Animals/1.
-   * For DELETE requests: To delete one of the cats from this API, select GET in the searchbar drop down and select DELETE instead. Then, paste in http://localhost5000/api/Animals/[THE-ID-NUMBER-YOU-WANT-TO-DELETE] Ex: If you wanted to delete Weenie (who has the id of two), you'd put http://localhost5000/api/Animals/2. 
+   * For DELETE requests: To delete one of the Animals from this API, select GET in the searchbar drop down and select DELETE instead. Then, paste in http://localhost5000/api/Animals/[THE-ID-NUMBER-YOU-WANT-TO-DELETE] Ex: If you wanted to delete Weenie (who has the id of two), you'd put http://localhost5000/api/Animals/2. 
     * Finally, hit Send to delete the specific entry.
+2. To view Swagger Documentation: Run `dotnet run` in the AnimalShelter project folder to open up a local server, then paste the address http://localhost:5000/swagger in your URL bar to see the swagger documentation for AnimalShelter API. Once the swagger UI is accessed, you can play around with the "Try out" and "Execute" buttons to see how each and every one of the endpoints work. 
+
+## Licensing
+
+Licensed under the [MIT License](license).
+
+## Contact Information
+
+_Jamie Knutsen (knutsenjamie@yahoo.com)_
+
+
+
+## Licensing
+
+Licensed under the [MIT License](license).
+
+## Contact Information
+
+_Jamie Knutsen (knutsenjamie@yahoo.com)_
+
 
 
