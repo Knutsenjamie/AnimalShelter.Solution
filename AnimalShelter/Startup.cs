@@ -22,7 +22,7 @@ namespace AnimalShelter
     public void ConfigureServices(IServiceCollection services)
     {
 
-      services.AddDbContext<CatKingdomContext>(opt =>
+      services.AddDbContext<AnimalShelterContext>(opt =>
                 opt.UseMySql(Configuration["ConnectionStrings:DefaultConnection"], ServerVersion.AutoDetect(Configuration["ConnectionStrings:DefaultConnection"])));
       services.AddControllers();
       services.AddSwaggerGen(swagger =>
