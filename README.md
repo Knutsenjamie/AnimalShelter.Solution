@@ -71,7 +71,7 @@ https://github.com/Knutsenjamie/AnimalShelter.Solution
     * Once you are inside of your workspace, look almost directly under the search bar on the top- there will be an "Overview" and a "+" Tab. Navigate over to the "+" Tab.  
     * For GET requests: to get all the cats in this API, enter http://localhost:5000/api/Animals into the "GET" search bar and select send. Then, the correct response should appear in the "Pretty" Tab as a JSON response exactly like this:
 ```
-    [
+[
     {
         "animalId": 1,
         "name": "Peppermint",
@@ -135,5 +135,18 @@ https://github.com/Knutsenjamie/AnimalShelter.Solution
         "age": 5,
         "gender": "Male"
     }
-    ]
+]
 ```
+ * To GET by querying the ID: simply enter http://localhost:5000/api/Animals/[ENTER-ID-NUMBER-HERE] into that same GET search bar and simpy replace the [ENTER-ID-NUMBER-HERE] with an Id number of choice you would like to see. For Example, http://localhost:5000/api/Animals/4 will return a response exactly like so:
+ ```
+ {
+    "animalId": 4,
+    "name": "Peanut Butter",
+    "breed": "Rottweiler",
+    "type": "Dog",
+    "description": "Looking for a loyal friend and protector of your home? Peanut Butter is the perfect combination of sweet, friendly, protective and loyal. Rescued from a hording situation, Peanut Butter has come a long way through our rehab program for rescues. Her favorite toy is a classic tennis ball to play fetch with. Adopt this deserving pupper today!",
+    "age": 4,
+    "gender": "Female"
+}
+```
+
