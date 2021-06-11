@@ -69,7 +69,7 @@ https://github.com/Knutsenjamie/AnimalShelter.Solution
     * Start by running the command `dotnet run` in the `AnimalShelter` project folder if you haven't already to get a server up and running. 
     * Then, navigate to https://www.postman.com and make an account if you haven't already. Once signed in, press "Launch Postman". On the left-hand side, look for the "Workspaces" tab, and select it. Once inside, select "My Workspace". 
     * Once you are inside of your workspace, look almost directly under the search bar on the top- there will be an "Overview" and a "+" Tab. Navigate over to the "+" Tab.  
-    * For GET requests: to get all the cats in this API, enter http://localhost:5000/api/Animals into the "GET" search bar and select send. Then, the correct response should appear in the "Pretty" Tab as a JSON response exactly like this:
+    * For GET requests: to get all the Animals in this API, enter http://localhost:5000/api/Animals into the "GET" search bar and select send. Then, the correct response should appear in the "Pretty" Tab as a JSON response exactly like this:
 ```
 {
         "animalId": 1,
@@ -148,5 +148,18 @@ https://github.com/Knutsenjamie/AnimalShelter.Solution
     "gender": "Female"
 }
 ```
-* Note: You can also GET responses by querying by Breed (such as http://localhost:5000/api/Animals/?breed=Dachshund), by Gender (such as http://localhost:5000/api/Animals/?gender=female), by Name (http://localhost:5000/api/Animals/?name=Smeagol), or by Type (http://localhost:5000/api/Animals/?type=iguana). Finally, simply switch out the specific parameters to retrieve whichever specific data you want (i.e. - switching [?name=Smeagol] into [?name=Weenie] and so forth.)
+* **Note**: You can also GET responses by querying by Breed (such as http://localhost:5000/api/Animals/?breed=Dachshund), by Gender (such as http://localhost:5000/api/Animals/?gender=female), by Name (http://localhost:5000/api/Animals/?name=Smeagol), or by Type (http://localhost:5000/api/Animals/?type=iguana). Finally, simply switch out the specific parameters to retrieve whichever specific data you want (i.e. - switching [?name=Smeagol] into [?name=Weenie] and so forth.)
+* For POST requests: If you would like to add some Animals to this API, Switch the request in the dropdown to the left from GET to POST. Next, deselect the "Params" tab underneath and switch to the "Body" tab. Then, select the radio button that says "Raw" and paste this into the body- replacing all values with the values you want:
+```
+{
+    "animalId": 0,
+    "name": "string",
+    "breed": "string",
+    "type": "string",
+    "description": "string",
+    "age": "int",
+    "gender": "string"
+}
+```
+
 
