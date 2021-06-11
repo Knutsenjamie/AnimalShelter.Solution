@@ -25,9 +25,15 @@ namespace AnimalShelter
       services.AddDbContext<AnimalShelterContext>(opt =>
                 opt.UseMySql(Configuration["ConnectionStrings:DefaultConnection"], ServerVersion.AutoDetect(Configuration["ConnectionStrings:DefaultConnection"])));
       services.AddControllers();
-      services.AddApiVersioning();
+      services.AddApiVersioning(config =>
+    {
+         config.DefaultApiVersion = new ApiVersion(1, 0);
+         config.AssumeDefaultVersionWhenUnspecified = true;
+         config.ReportApiVersions = true;
+         config.ApiVersionReader = new HeaderApiVersionReader("api-version");
+    });
       services.AddSwaggerGen(swagger =>
-     {
+    {
        //This is to generate the Default UI of Swagger Documentation    
        swagger.SwaggerDoc("v1", new OpenApiInfo
        {
@@ -35,7 +41,7 @@ namespace AnimalShelter
          Title = "ASP.NET 5 Web API",
          Description = "Authentication and Authorization in ASP.NET 5 with Swagger"
        });
-     });
+    });
     }
 
     // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
