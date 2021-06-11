@@ -176,5 +176,7 @@ https://github.com/Knutsenjamie/AnimalShelter.Solution
 }
 ```
    * Finally, after filling out your preffered values, enter in http://localhost5000/api/Animals/[THE-ID-NUMBER-YOU-WANT-TO-EDIT/REPLACE] Ex: If you wanted to replace Peppermint (who has the id of one), you'd put http://localhost5000/api/Animals/1.
+   * For DELETE requests: To delete one of the cats from this API, select GET in the searchbar drop down and select DELETE instead. Then, paste in http://localhost5000/api/Animals/[THE-ID-NUMBER-YOU-WANT-TO-DELETE] Ex: If you wanted to delete Weenie (who has the id of two), you'd put http://localhost5000/api/Animals/2. 
+    * Finally, hit Send to delete the specific entry.
 
 
