@@ -54,8 +54,11 @@ https://github.com/Knutsenjamie/AnimalShelter.Solution
         },
         "AllowedHosts": "*",
         "ConnectionStrings": {
-            "DefaultConnection": "Server=localhost;Port=3306;database=cat_kingdom;uid=[YOUR-USERNAME-HERE];pwd=[YOUR-PASSWORD-HERE];"
+            "DefaultConnection": "Server=localhost;Port=3306;database=animal_shelter;uid=[YOUR-USERNAME-HERE];pwd=[YOUR-PASSWORD-HERE];"
         }
     }
     ```
     and paste it into the appsettings.json to use the database. *WARNING: This file should automatically be ignored AS LONG AS it is in the AnimalShelter directory and NOT the root directory (as it is listed in the .gitignore). However, Be aware of what you are committing and pushing to avoid pushing your personal username and password- as it is sensitive data* Your database should now be connected. 
+    8. To create and run the database, navigate back to the root directory `cd AnimalShelter.Solution` and enter the command `dotnet tool install --global dotnet-ef` in the terminal to enable EF Core migrations if not already enabled.
+    * Then, if you plan on changing the controller files at all or the models and do make changes, be sure to navigate back into the project folder `cd AnimalShelter`, and run the command `dotnet ef migrations add [NAME OF YOUR MIGRATION]` to add an updated migration so that the database updates correctly. Naming conventions for migrations work like a git commit- so be sure to be verbose. 
+    * After you add migrations, or if you don't add any at all and just want to use the projects exsisting migrations, navigate into the `AnimalShelter` directory again if not there already, and run the command `dotnet ef database update`. You should now be able to open MySQL workbench and see a database named `animal_shelter` that includes all of the projects correct tables and be able to use the database for this API.  
