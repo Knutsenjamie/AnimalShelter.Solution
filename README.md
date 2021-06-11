@@ -69,3 +69,71 @@ https://github.com/Knutsenjamie/AnimalShelter.Solution
     * Start by running the command `dotnet run` in the `AnimalShelter` project folder if you haven't already to get a server up and running. 
     * Then, navigate to https://www.postman.com and make an account if you haven't already. Once signed in, press "Launch Postman". On the left-hand side, look for the "Workspaces" tab, and select it. Once inside, select "My Workspace". 
     * Once you are inside of your workspace, look almost directly under the search bar on the top- there will be an "Overview" and a "+" Tab. Navigate over to the "+" Tab.  
+    * For GET requests: to get all the cats in this API, enter http://localhost:5000/api/Animals into the "GET" search bar and select send. Then, the correct response should appear in the "Pretty" Tab as a JSON response exactly like this:
+```
+    [
+    {
+        "animalId": 1,
+        "name": "Peppermint",
+        "breed": "Tuxedo",
+        "type": "Cat",
+        "description": "The most chill cat you will ever meet. Peppermint loves snuggles, catnip, and his favorite mouse toy that has a bell inside of it. Adopt this sweet adult kitty today!",
+        "age": 7,
+        "gender": "Male"
+    },
+    {
+        "animalId": 2,
+        "name": "Weenie",
+        "breed": "Dachshund",
+        "type": "Dog",
+        "description": "Even though he's got somewhat of a fiesty personality; Weenie is your average, loveable, Dachshund. His favorite toy is a giant stuffed pickle that makes crinkly sounds. Adopt Weenie today!",
+        "age": 1,
+        "gender": "Male"
+    },
+    {
+        "animalId": 3,
+        "name": "Lasagna",
+        "breed": "Orange Tabby",
+        "type": "Cat",
+        "description": "Lasagna is your typical, spunky little kitten. He loves to zoomie around and play with anything that moves honestly. Lasagna is the perfect addition for a family with young children. Adopt today!",
+        "age": 1,
+        "gender": "Male"
+    },
+    {
+        "animalId": 4,
+        "name": "Peanut Butter",
+        "breed": "Rottweiler",
+        "type": "Dog",
+        "description": "Looking for a loyal friend and protector of your home? Peanut Butter is the perfect combination of sweet, friendly, protective and loyal. Rescued from a hording situation, Peanut Butter has come a long way through our rehab program for rescues. Her favorite toy is a classic tennis ball to play fetch with. Adopt this deserving pupper today!",
+        "age": 4,
+        "gender": "Female"
+    },
+    {
+        "animalId": 5,
+        "name": "Smeagol",
+        "breed": "Likoi",
+        "type": "Cat",
+        "description": "One of the shelters first werewolf cats, Smeagol is a sweet little lady who enjoys snuggling up and cuddling. Smeagol was a rescue from a bad breeding situation, but has aced our rehab program and is ready for a forever home! Her favorite thing ever is catnip. Bring Smeagol home today!",
+        "age": 4,
+        "gender": "Female"
+    },
+    {
+        "animalId": 6,
+        "name": "Aki",
+        "breed": "Shiba Inu",
+        "type": "Dog",
+        "description": "Do you love to hike? Do you want a pup that will be your best outdoorsy friend? Aki the energetic and loving Shiba Inu is perfect for your family! Aki loves to get down and dirty and play in the mud sometimes, but give her a bath and she'll enjoy that just as much. Bring Aki home today!",
+        "age": 2,
+        "gender": "Female"
+    },
+    {
+        "animalId": 7,
+        "name": "Pierre",
+        "breed": "Blue Iguana",
+        "type": "Iguana",
+        "description": "One of our only other species available, Pierre is a Blue Iguana that was rescued from a sketchy tropical pet store. Pierre is quiet, but will bring joy to any reptile-experienced family that passes a basic background check. Pierre likes to sun himself- especially on his favorite rock. If you qualify, adopt this big loveable dude today!",
+        "age": 5,
+        "gender": "Male"
+    }
+    ]
+```
