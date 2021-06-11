@@ -41,11 +41,21 @@ https://github.com/Knutsenjamie/AnimalShelter.Solution
 6. To install and make sure all needed packages are up-to-date, navigate into the AnimalShelter folder from root directory by entering `cd AnimalShelter` in terminal.
     * Type the command `dotnet restore` to update and restore all needed packages and dependencies to run application.
 7. In order to use the database you must make an appsettings.json file. Run the command `touch appsettings.json` in the `AnimalShelter` directory of the project. 
-    * Then, enter in your own approppriate username (or enter 'root' in the YOUR-USERNAME-HERE field), and whichever password you used to open, use, and create the imported database in MySQL Workbench- use it and enter it as follows in this line 'database=animal_shelter;uid=[YOUR-USERNAME-HERE];pwd=[YOUR-PASSWORD-HERE]' *do NOT actually put []- this is just for visual purposes to see where to change the information*
+    * Then, enter in your own approppriate username (or enter 'root' in the YOUR-USERNAME-HERE field), and whichever password you used to open, use, and create the imported database in MySQL Workbench- use it and enter it as follows in this line <code>database=animal_shelter;uid=[YOUR-USERNAME-HERE];pwd=[YOUR-PASSWORD-HERE]</code> *do NOT actually put []- this is just for visual purposes to see where to change the information*
+    * Finally, paste it exactly like in this example, 
     <code> 
-    Test
     {
-        blah blah blah 
-    
+        "Logging": {
+            "LogLevel": {
+            "Default": "Information",
+            "Microsoft": "Warning",
+            "Microsoft.Hosting.Lifetime": "Information"
+            }
+        },
+        "AllowedHosts": "*",
+        "ConnectionStrings": {
+            "DefaultConnection": "Server=localhost;Port=3306;database=cat_kingdom;uid=[YOUR-USERNAME-HERE];pwd=[YOUR-PASSWORD-HERE];"
+        }
     }
     </code>
+    and paste it into the appsettings.json to use the database. *WARNING: This file should automatically be ignored AS LONG AS it is in the AnimalShelter directory and NOT the root directory (as it is listed in the .gitignore). However, Be aware of what you are committing and pushing to avoid pushing your personal username and password- as it is sensitive data* Your database should now be connected. 
