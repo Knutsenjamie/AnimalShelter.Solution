@@ -161,5 +161,20 @@ https://github.com/Knutsenjamie/AnimalShelter.Solution
     "gender": "string"
 }
 ```
+* Finally, after filling out your preferred values, enter in http://localhost5000/api/Animals into the search bar and press "Send".
+* For PUT requests: To edit an exsisting entry with a PUT request, select the dropdown from GET or POST to PUT instead. Again, select the "Body" tab, and select the "raw" radio button. Post the following into the body and replace the values as you would like just as you would in the POST request:
+
+```
+{
+    "animalId": 0,
+    "name": "string",
+    "breed": "string",
+    "type": "string",
+    "description": "string",
+    "age": "int",
+    "gender": "string"
+}
+```
+   * Finally, after filling out your preffered values, enter in http://localhost5000/api/Animals/[THE-ID-NUMBER-YOU-WANT-TO-EDIT/REPLACE] Ex: If you wanted to replace Peppermint (who has the id of one), you'd put http://localhost5000/api/Animals/1.
 
 
